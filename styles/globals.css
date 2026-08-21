@@ -12,6 +12,18 @@ body {
   margin: 0;
 }
 
+button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
 h1,
 h2,
 h3,

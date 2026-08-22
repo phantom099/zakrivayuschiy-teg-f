@@ -15,11 +15,6 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <svg class="visually-hidden" aria-hidden="true">
-      <symbol id="floppy" viewBox="0 0 28 28">
-        <use href="./svg/floppy.svg#floppy"></use>
-      </symbol>
-    </svg>
     <header class="header">
       <span class="header__logo">&lt;/HTML&gt;</span>
       <h1 class="header__title">закрывающий тег</h1>
@@ -524,21 +519,21 @@
         aria-haspopup="dialog"
       >
         <svg class="save-button__icon" viewBox="0 0 39 39" aria-hidden="true">
-          <use href="#floppy"></use></svg
+          <use href="./svg/floppy.svg#floppy"></use></svg
         ><span class="button__text">Сохранить на память</span>
       </button>
+      <dialog class="dialog" id="save-dialog">
+        <div class="dialog__message">
+          <svg class="dialog__icon" viewBox="0 0 39 39" aria-hidden="true">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <button class="dialog__button button" type="button">
+          <span class="button__text">ок</span>
+        </button>
+      </dialog>
     </main>
-    <dialog class="dialog" id="save-dialog">
-      <div class="dialog__message">
-        <svg class="dialog__icon" viewBox="0 0 39 39" aria-hidden="true">
-          <use href="#floppy"></use>
-        </svg>
-        <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-      </div>
-      <button class="dialog__button button" type="button">
-        <span class="button__text">ОК</span>
-      </button>
-    </dialog>
     <script src="./scripts/like.js"></script>
     <script src="./scripts/dialog.js"></script>
   </body>

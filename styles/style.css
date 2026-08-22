@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   inline-size: var(--page-inline-size, min(100%, 700px));
-  block-size: 368px;
+  padding-block: 128px;
   margin: 100px auto 0;
   border: 2px solid var(--accent-color, #000);
   background-color: var(--background-color, #fff);
@@ -52,7 +52,7 @@
   padding: 5px 10px;
   font-size: 18px;
   font-variation-settings: "wght" var(--title-font-weight, 715);
-  line-height: 22px;
+  line-height: 1.22;
 }
 .card__image-wrapper {
   position: relative;
@@ -65,6 +65,7 @@
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
+  object-position: center;
 }
 .card__image_filter_grayscale {
   filter: grayscale(0.8);
@@ -138,8 +139,9 @@
 }
 .card__icon-button {
   display: flex;
-  inline-size: 27px;
-  block-size: 24px;
+  align-items: center;
+  inline-size: 39px;
+  block-size: 38px;
   border: 0;
   padding: 0;
   outline: 2px solid transparent;
@@ -154,8 +156,8 @@
 }
 .like-icon {
   display: block;
-  inline-size: 27px;
-  block-size: 24px;
+  inline-size: 39px;
+  block-size: 36px;
 }
 .heart {
   transform-origin: center;
@@ -165,11 +167,11 @@
   transition: fill 0.1s linear;
 }
 .core {
-  fill: var(--background-color, #fff);
+  fill: transparent;
   transition: fill 0.3s linear 0.03s;
 }
 .main-body {
-  fill: var(--background-color, #fff);
+  fill: transparent;
   transition: fill 0.3s linear;
 }
 .sparks {
@@ -185,10 +187,14 @@
   transition-delay: 0.05s;
 }
 .like-icon:active .core,
+.like-icon.is-liked .core {
+  fill: var(--animation-fill-color, #ff0000);
+  transition-delay: 0s;
+}
 .like-icon:active .main-body,
-.like-icon.is-liked .core,
 .like-icon.is-liked .main-body {
   fill: var(--animation-fill-color, #ff0000);
+  transition-delay: 0.05s;
 }
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color, #ff0000);
@@ -297,13 +303,10 @@
 
 @media (width <= 600px) {
   .header {
-    block-size: 327px;
+    padding-block: 120px;
   }
   .content {
     margin-block-start: 100px;
-  }
-  .card__label {
-    inset-inline-end: 13px;
   }
   .save-button {
     flex-direction: column;

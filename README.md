@@ -27,6 +27,7 @@
 
 Проект не требует сборки или установки зависимостей. Клонируйте репозиторий и откройте `index.html` в браузере.
 
-## Ссылка
+## Ссылки
 
-[Открыть проект на GitHub Pages](https://phantom099.github.io/zakrivayuschiy-teg-f/)
+- [Репозиторий проекта](https://github.com/phantom099/zakrivayuschiy-teg-f)
+- [Открыть проект на GitHub Pages](https://phantom099.github.io/zakrivayuschiy-teg-f/)

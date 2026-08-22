@@ -31,3 +31,5 @@
 
 - [Репозиторий проекта](https://github.com/phantom099/zakrivayuschiy-teg-f)
 - [Открыть проект на GitHub Pages](https://phantom099.github.io/zakrivayuschiy-teg-f/)
+
+https://github.com/phantom099/zakrivayuschiy-teg-f
